@@ -1,9 +1,11 @@
 import React from 'react'
+import Container from '@material-ui/core/Container';
+import store from '../store.json';
 
 export default function Home() {
     return (
-        <div>
-            welcome in Home
-        </div>
+        <Container>
+           hello home
+        </Container>
     )
 }

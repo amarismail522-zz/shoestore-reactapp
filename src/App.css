@@ -7,8 +7,39 @@
 .nav{
   color: #fff;
   width: 100%;
-  background-color: #242c44;
   display: flex;
-  flex-direction:column ;
-  justify-content: center;
+  justify-content: space-between;
+  background-color: #242c44;
+  padding: 12px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5) ;
+  box-sizing: border-box;
+  /* position: fixed;   */
+} 
+.nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding:0px 70px;
 }
+.nav li{
+  list-style-type: none;
+  padding: 4px 30px 0px 30px;
+}
+
+
+
+.navLink{
+  text-decoration: none;
+  color: #ffff;
+}
+
+.logo-div{
+  display: flex;
+  font-family: monospace;
+  font-size: 30px;
+  box-sizing: border-box;
+  padding-left: 30px;
+  letter-spacing: 1px;
+}
+
+
