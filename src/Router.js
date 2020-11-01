@@ -7,6 +7,7 @@ import {
 import Home from './Components/Home'
 import Navbar from './Components/Navbar'
 import Product from './Components/Product'
+import About from './Components/About'
 
 
 export default function RouterConfig() {
@@ -19,6 +20,9 @@ export default function RouterConfig() {
                 </Route>
                 <Route  path="/Product">
                     <Product />
+                </Route>
+                <Route  path="/About">
+                    <About />
                 </Route>
             </Switch>
         </Router>
