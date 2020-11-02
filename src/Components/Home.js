@@ -1,7 +1,9 @@
 import React from 'react'
 import Container from '@material-ui/core/Container';
 import store from '../store.json';
-import { Button } from '@material-ui/core';
+import { Button, Divider, Grid } from '@material-ui/core';
+
+import ProductCard from './ProductCard';
 
 
 export default function Home() {
@@ -19,8 +21,31 @@ export default function Home() {
             </div>
             <Container>
                 <div>
-                    <div>
+                    <div className="homeText">
                         <h1>Latest Products</h1>
+                        <Divider className="divider" />
+                    </div>
+                    <div className="productSection">
+                        <Grid container spacing={3}>
+                            <Grid item xs={12} sm={4}>
+                                <ProductCard />
+                            </Grid>
+                            <Grid item xs={12} sm={4}>
+                                <ProductCard />
+                            </Grid>
+                            <Grid item xs={12} sm={4}>
+                                <ProductCard />
+                            </Grid>
+                            <Grid item xs={12} sm={4}>
+                                <ProductCard />
+                            </Grid>
+                            <Grid item xs={12} sm={4}>
+                                <ProductCard />
+                            </Grid>
+                            <Grid item xs={12} sm={4}>
+                                <ProductCard />
+                            </Grid>
+                        </Grid>
                     </div>
                 </div>
             </Container>
