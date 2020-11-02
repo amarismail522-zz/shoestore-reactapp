@@ -1,9 +1,8 @@
 import React from 'react'
-import Container from '@material-ui/core/Container';
 import store from '../store.json';
-import { Button, Divider, Grid } from '@material-ui/core';
-
+import { Button, Divider, Grid, Container } from '@material-ui/core';
 import ProductCard from './ProductCard';
+
 
 
 export default function Home() {
@@ -49,6 +48,8 @@ export default function Home() {
                     </div>
                 </div>
             </Container>
+            
+            
         </div>
 
     )
