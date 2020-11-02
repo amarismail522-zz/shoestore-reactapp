@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button, Divider, Grid, Container } from '@material-ui/core';
+import { Divider, Grid, Container } from '@material-ui/core';
 import ProductCard from './ProductCard';
 
 export default function Product() {

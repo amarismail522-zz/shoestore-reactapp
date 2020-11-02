@@ -1,5 +1,4 @@
 import React from 'react'
-import store from '../store.json';
 import { Button, Divider, Grid, Container } from '@material-ui/core';
 import ProductCard from './ProductCard';
 
