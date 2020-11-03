@@ -9,6 +9,7 @@ import Navbar from './Components/Navbar'
 import Product from './Components/Product'
 import About from './Components/About'
 import Footer from './Components/Footer';
+import ProductItem from './Components/ProductItem';
 
 
 export default function RouterConfig() {
@@ -19,12 +20,16 @@ export default function RouterConfig() {
                 <Route exact path="/">
                     <Home />
                 </Route>
-                <Route  path="/Product">
+                <Route exact  path="/Product">
                     <Product />
                 </Route>
                 <Route  path="/About">
                     <About />
                 </Route>
+                <Route  path="/product/:id">
+                    <ProductItem />
+                </Route>
+                <Route path="*" component={()=> <h1>404 Page Not found</h1>}/>
             </Switch>
             <Footer />
         </Router>

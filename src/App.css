@@ -4,6 +4,9 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
+body{
+  background-color: #F7F7F9;
+}
 
 .nav{
   color: #fff;
@@ -111,7 +114,7 @@
 .divider{
   width: 30%;
   background: #e76462 !important; 
-  top: 4px;
+  margin-top: 5px;
 
 }
 
@@ -126,7 +129,8 @@
   margin: 12px 0px 0px 0px ;
   box-sizing: border-box;
   box-shadow: 10px rgba(0, 0, 0, 0.9)  !important;
-
+  max-width:100%;
+  height: auto;
 }
 
 .cardHeading{
@@ -137,14 +141,20 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
   background-color:rgba(210, 48, 44, 0.9) !important;
   color: white !important;
+  margin-left: 5px !important;
+  margin-bottom: 1px !important;
 }
 .cardBtn:hover{
   background-color:rgba(210, 48, 44, 1) !important;
 
 }
 .mediaImg{
-  background-image:url('../src/images/banner1.jpg') ;
-  height: 25vh ;
+  /* background-image:url('../src/images/banner1.jpg') ; */
+  height: auto;
+  width: 100%;
+  overflow-y: hidden;
+  border-left: 3px solid rgba(210, 48, 44, 0.9);
+
 }
 
 
@@ -172,7 +182,7 @@
   height: 50vh;
   padding: 40px 30px 30px 30px ;
   margin-top: 30px;
-  margin-bottom: 150px;
+  margin-bottom: 40px;
   box-sizing: border-box !important;
   box-shadow: 100px rgba(0, 0, 0, 0.9) !important;
 }
@@ -201,8 +211,9 @@
 
 }
 
-
-
+.producitem{
+  max-width: 500p;
+}
 
 
 /* footer */
@@ -213,5 +224,7 @@
   color:#F7F7F9;
   text-align: center;
   padding: 10px 0px;
+  margin-top: 110px;
+  bottom: 0 !important;
 
 }

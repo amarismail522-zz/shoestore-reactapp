@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Button, Divider, Grid, Container } from '@material-ui/core';
 import ProductCard from './ProductCard';
 
+import Shoes from '../store.json';
 
 
 export default function Home() {
@@ -13,7 +15,10 @@ export default function Home() {
                         <h1>Any day is a perfect day for
                             <br />shoe shopping!</h1>
                         <br />
-                        <Button className="bannerBtn">See More</Button>
+                        <Link to="/product">
+                            <Button className="bannerBtn">See More</Button>
+                        </Link>
+
                     </div>
                 </div>
             </div>
@@ -25,30 +30,22 @@ export default function Home() {
                     </div>
                     <div className="productSection">
                         <Grid container spacing={3}>
-                            <Grid item xs={12} sm={4}>
-                                <ProductCard />
-                            </Grid>
-                            <Grid item xs={12} sm={4}>
-                                <ProductCard />
-                            </Grid>
-                            <Grid item xs={12} sm={4}>
-                                <ProductCard />
-                            </Grid>
-                            <Grid item xs={12} sm={4}>
-                                <ProductCard />
-                            </Grid>
-                            <Grid item xs={12} sm={4}>
-                                <ProductCard />
-                            </Grid>
-                            <Grid item xs={12} sm={4}>
-                                <ProductCard />
-                            </Grid>
+                            {Object.keys(Shoes).map((keyName, idx) => {
+                                const shoe = Shoes[keyName];
+                                return (
+                                    <Grid item xs={12} sm={4}>
+                                        <ProductCard shoe={shoe}
+                                            keyName={keyName}
+                                            key={idx} idx={idx} />
+                                    </Grid>
+                                );
+                            })}
                         </Grid>
                     </div>
                 </div>
             </Container>
-            
-            
+
+
         </div>
 
     )
