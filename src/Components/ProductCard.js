@@ -15,7 +15,7 @@ console.log(keyName)
     <Card className="productCard" >
       <CardActionArea>
         <CardMedia alt="this is shoe" className="mediaImg">
-          <img src={shoe.image} className="mediaImg" />
+          <img src={shoe.image} alt={shoe.name} className="mediaImg" />
         </CardMedia>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2" className="cardHeading">
