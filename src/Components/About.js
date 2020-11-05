@@ -20,7 +20,7 @@ export default function About() {
 
                         <div className="aboutDesc">
                             <h1>This is Amar Ismail</h1>
-                            <p>lorem hi who are you i dnot what are you say but you are crazy whwat are you saying lorem hi who are you i dnot what are you say but you are crazy whwat are you saying lorem hi who are you i dnot what are you say but you are crazy whwat are you saying lorem hi who are you i dnot what are you say but you are crazy whwat are you saying </p>
+                            <p>I'm learning Web and Hybrid Mobile Application tech at Saylani Mass IT Traning Program and also learning this Bootcamp2020.</p>
                         </div>
 
                     </Grid>

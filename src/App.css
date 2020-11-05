@@ -224,7 +224,29 @@ body{
   color:#F7F7F9;
   text-align: center;
   padding: 10px 0px;
-  margin-top: 110px;
+  margin-top:13%;
   bottom: 0 !important;
 
+}
+
+._ProductCard{
+  box-sizing: border-box;
+  display: flex;
+  padding: 20px;
+  border-left: 5px solid rgba(210, 48, 44, 0.9);
+
+
+}
+.subCard{
+  display:flex;
+  justify-content: space-around;
+}
+
+._mediaImg{
+  height: auto;
+  width: 70%;
+  
+}
+._cardHeading{
+  font-size: 30px !important;
 }
