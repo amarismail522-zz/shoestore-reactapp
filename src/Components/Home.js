@@ -15,8 +15,8 @@ export default function Home() {
                         <h1>Any day is a perfect day for
                             <br />shoe shopping!</h1>
                         <br />
-                        <Link to="/product">
-                            <Button className="bannerBtn" style={{textDecoration:"none"}}>See More</Button>
+                        <Link to="/product" style={{textDecoration:"none"}}>
+                            <Button className="bannerBtn">See More</Button>
                         </Link>
 
                     </div>
